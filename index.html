@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <style>
+        #container {
+            border: 1px solid black;
+            width: 40%;
+            height:900px;
+            background-color: aqua;
+            display: block;
+            margin: auto;
+            border-radius: 10px;
+            overflow-y: auto;
+        
+            
+
+
+        }
+        #messageContainer{
+            font-size: x-large;
+            font-weight: lighter;
+
+        }
+        .left{
+            border: 1px solid yellow;
+            width: 30%;
+            height: 40px;
+            border-radius: 20px;
+            margin: 20px;
+            text-align: center;
+            color:white;
+            float: left;
+            clear: both;
+            background-color: rgb(108, 101, 101);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            
+        }
+        .Message{
+            border: 1px solid yellow;
+            width: 30%;
+            height: 40px;
+            border-radius: 20px;
+            margin: 20px;
+            text-align: center;
+            color:white;
+            
+            background-color: rgb(108, 101, 101);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            
+        }
+        .right{
+            border: 1px solid yellow;
+            width: 30%;
+            height: 40px;
+            border-radius: 20px;
+            margin: 20px;
+            /* text-align: center; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            color:white;
+            float: right;
+            clear: both;
+            background-color: rgb(108, 101, 101);
+
+
+        }
+        #send{
+            display: block;
+            width: 40%;
+            margin: auto;
+        }
+        #formContainer{
+
+        }
+        #messageInp{
+            width: 80%;
+            padding: 20px;
+            border-radius: 20px;
+            margin-top: 10px;
+        }
+        #btn{
+            /* padding: 20px,10px;
+            pa */
+
+            border-radius: 10px;
+            padding: 15px;
+            font-size: xx-large;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+            <div class="left Message" ></div>
+            <div class="right Message"></div>
+    </div>
+    <div id="send">
+        <div id="formContainer">
+            <input type="text" id="messageInp">
+            <button id="btn">Send</button>
+        </div>
+    </div>
+    
+</body>
+</html>
+<script src="./js/client.js"></script>
